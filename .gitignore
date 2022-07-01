@@ -3,3 +3,5 @@ flow-go/
 *.cdc
 *.checkpoint
 *.log
+main
+
