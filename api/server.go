@@ -29,8 +29,8 @@ import (
 	"github.com/onflow/flow/protobuf/go/flow/access"
 	"github.com/onflow/flow/protobuf/go/flow/entities"
 
+	"github.com/GetElastech/flow-dps/models/dps"
 	conv "github.com/optakt/flow-dps/models/convert"
-	"github.com/optakt/flow-dps/models/dps"
 )
 
 // Server is a simple implementation of the generated AccessAPIServer interface.

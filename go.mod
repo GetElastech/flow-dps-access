@@ -14,7 +14,7 @@ require (
 	github.com/onflow/flow-go v0.24.3
 	github.com/onflow/flow/protobuf/go/flow v0.2.3
 	github.com/optakt/dps-access-api v0.0.0-20210924144517-6053bf51ac20
-	github.com/optakt/flow-dps v1.4.8
+	github.com/GetElastech/flow-dps dev20220701a
 	github.com/rs/zerolog v1.25.0
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.7.0
