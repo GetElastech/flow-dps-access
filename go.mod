@@ -1,12 +1,13 @@
-module github.com/GetElastech/flow-dps-access
+module github.com/onflow/flow-dps-access
 
 go 1.18
 
-replace github.com/optakt/dps-access-api => ./
+replace github.com/onflow/dps-access-api => ./
 
-replace github.com/optakt/flow-dps v1.4.8 => github.com/GetElastech/flow-dps v1.4.9-0.20220701185430-c4b8ab464baa
+replace github.com/onflow/flow-dps => ./flow-dps
 
 require (
+	github.com/GetElastech/flow-dps v1.4.9-0.20220701214256-b6ea519c29bb
 	github.com/golang/protobuf v1.5.2
 	github.com/grpc-ecosystem/go-grpc-middleware/providers/zerolog/v2 v2.0.0-rc.2
 	github.com/grpc-ecosystem/go-grpc-middleware/v2 v2.0.0-rc.2
@@ -14,7 +15,7 @@ require (
 	github.com/onflow/flow-go v0.24.3
 	github.com/onflow/flow/protobuf/go/flow v0.2.3
 	github.com/optakt/dps-access-api v0.0.0-20210924144517-6053bf51ac20
-	github.com/GetElastech/flow-dps dev20220701a
+	github.com/optakt/flow-dps v1.4.8
 	github.com/rs/zerolog v1.25.0
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.7.0

@@ -84,8 +84,8 @@ github.com/BurntSushi/toml v0.3.1/go.mod h1:xHWCNGjB5oqiDr8zfno3MHue2Ht5sIBksp03
 github.com/BurntSushi/xgb v0.0.0-20160522181843-27f122750802/go.mod h1:IVnqGOEym/WlBOVXweHU+Q+/VP0lqqI8lqeDx9IjBqo=
 github.com/DataDog/datadog-go v3.2.0+incompatible/go.mod h1:LButxg5PwREeZtORoXG3tL4fMGNddJ+vMq1mwgfaqoQ=
 github.com/DataDog/zstd v1.4.1/go.mod h1:1jcaCB/ufaK+sKp1NBhlGmpz41jOoPQ35bpF36t7BBo=
-github.com/GetElastech/flow-dps v1.4.9-0.20220701185430-c4b8ab464baa h1:oKhvPbDcRyARXnljVEiIJuxSyNXdT8KSKuMXpHt2MH4=
-github.com/GetElastech/flow-dps v1.4.9-0.20220701185430-c4b8ab464baa/go.mod h1:NEksxKm/lXRb3qH4C5wUOdYKr6N/ePFG2nwDkvU8eag=
+github.com/GetElastech/flow-dps v1.4.9-0.20220701214256-b6ea519c29bb h1:ACwlXLfrz6JuJXeQp5Nozsrdkd3fKuRv17QWdC6oqPo=
+github.com/GetElastech/flow-dps v1.4.9-0.20220701214256-b6ea519c29bb/go.mod h1:OciFMhJi0liKyze7+GSd7j/A1jCBAiA2U07stO9XD74=
 github.com/HdrHistogram/hdrhistogram-go v0.9.0 h1:dpujRju0R4M/QZzcnR1LH1qm+TVG3UzkWdp5tH1WMcg=
 github.com/HdrHistogram/hdrhistogram-go v0.9.0/go.mod h1:nxrse8/Tzg2tg3DZcZjm6qEclQKK70g0KxO61gFFZD4=
 github.com/Knetic/govaluate v3.0.1-0.20171022003610-9aa49832a739+incompatible/go.mod h1:r7JcOSlj0wfOMncg0iLm8Leh48TZaKVeNIfJntJ2wa0=
@@ -1329,6 +1329,10 @@ github.com/openzipkin/zipkin-go v0.1.1/go.mod h1:NtoC/o8u3JlF1lSlyPNswIbeQH9bJTm
 github.com/openzipkin/zipkin-go v0.1.6/go.mod h1:QgAqvLzwWbR/WpD4A3cGpPtJrZXNIiJc5AZX7/PBEpw=
 github.com/openzipkin/zipkin-go v0.2.1/go.mod h1:NaW6tEwdmWMaCDZzg8sh+IBNOxHMPnhQw8ySjnjRyN4=
 github.com/openzipkin/zipkin-go v0.2.2/go.mod h1:NaW6tEwdmWMaCDZzg8sh+IBNOxHMPnhQw8ySjnjRyN4=
+github.com/optakt/dps-access-api v0.0.0-20210924144517-6053bf51ac20 h1:i/gm5OVKUvBea5LPBJo8dP62NpFnLprRlk6XN2bSzA4=
+github.com/optakt/dps-access-api v0.0.0-20210924144517-6053bf51ac20/go.mod h1:91zbeHp8GCjsQd6T5Shze1/CcnO95hwX6Plqk2jWZ8U=
+github.com/optakt/flow-dps v1.4.8 h1:mmb+wMJvpJWrLD4hy/T1osKdEAQyABGvG6I5Z8HLZMQ=
+github.com/optakt/flow-dps v1.4.8/go.mod h1:hKyzEi9k9yj5OE8AeAV1c/g8tr5WokHKBk/L7Y1LZqk=
 github.com/pact-foundation/pact-go v1.0.4/go.mod h1:uExwJY4kCzNPcHRj+hCR/HBbOOIwwtUjcrb0b5/5kLM=
 github.com/pascaldekloe/goe v0.0.0-20180627143212-57f6aae5913c/go.mod h1:lzWF7FIEvWOWxwDKqyGYQf6ZUaNfKdP144TG7ZOy1lc=
 github.com/pascaldekloe/goe v0.1.0/go.mod h1:lzWF7FIEvWOWxwDKqyGYQf6ZUaNfKdP144TG7ZOy1lc=
