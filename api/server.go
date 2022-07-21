@@ -29,8 +29,10 @@ import (
 	"github.com/onflow/flow/protobuf/go/flow/access"
 	"github.com/onflow/flow/protobuf/go/flow/entities"
 
+	conv "github.com/GetElastech/flow-dps/models/convert"
 	"github.com/GetElastech/flow-dps/models/dps"
-	conv "github.com/optakt/flow-dps/models/convert"
+	"github.com/onflow/cadence/runtime/common"
+	//conv "github.com/optakt/flow-dps/models/convert"
 )
 
 // Server is a simple implementation of the generated AccessAPIServer interface.
@@ -53,6 +55,14 @@ func NewServer(index dps.Reader, codec dps.Codec, invoker Invoker) *Server {
 	}
 
 	return &s
+}
+
+type MemoryUsage struct {
+	Kind   MemoryKind
+	Amount uint64
+}
+type MemoryGauge interface {
+	MeterMemory(usage MemoryUsage) error
 }
 
 // Ping implements the Ping endpoint from the Flow Access API.
@@ -398,8 +408,9 @@ func (s *Server) ExecuteScriptAtBlockID(ctx context.Context, in *access.ExecuteS
 // See https://docs.onflow.org/access-api/#executescriptatblockheight
 func (s *Server) ExecuteScriptAtBlockHeight(_ context.Context, in *access.ExecuteScriptAtBlockHeightRequest) (*access.ExecuteScriptResponse, error) {
 	var args []cadence.Value
+	var gauge common.MemoryGauge
 	for _, arg := range in.Arguments {
-		val, err := json.Decode(arg)
+		val, err := json.Decode(gauge, arg)
 		if err != nil {
 			return nil, fmt.Errorf("could not decode script argument: %w", err)
 		}
@@ -557,4 +568,8 @@ func (s *Server) SendTransaction(ctx context.Context, in *access.SendTransaction
 // See https://docs.onflow.org/access-api/#getlatestprotocolstatesnapshotrequest
 func (s *Server) GetLatestProtocolStateSnapshot(ctx context.Context, in *access.GetLatestProtocolStateSnapshotRequest) (*access.ProtocolStateSnapshotResponse, error) {
 	return nil, errors.New("GetLatestProtocolSnapshot is not implemented by the Flow DPS API; please use the Flow Access API on a Flow access node directly")
+}
+
+func (c *Server) GetTransactionResultByIndex(ctx context.Context, in *access.GetTransactionByIndexRequest) (*access.TransactionResultResponse, error) {
+	return nil, errors.New("GetTransactionResultByIndex is not implemented by the Flow DPS API; please use the Flow Access API on a Flow access node directly")
 }
